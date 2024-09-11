@@ -139,8 +139,14 @@ class Query extends AbstractQuery {
       return data[0];
     }
     if (this.isRawQuery()) {
-      const meta = data.meta;
-      delete data.meta;
+      let meta = null
+      // introduced with v3 of the mariadb package
+      // https://github.com/sequelize/sequelize/issues/15701
+      // https://sequelize.org/docs/v6/other-topics/dialect-specific-things/#mariadb
+      try {
+        meta = data.meta;
+        delete data.meta;
+      } catch (error) {}
       return [data, meta];
     }
     if (this.isShowIndexesQuery()) {
