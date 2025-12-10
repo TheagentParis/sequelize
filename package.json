@@ -98,7 +98,6 @@
     "fast-glob": "^3.2.7",
     "fs-jetpack": "^4.3.0",
     "husky": "^7.0.4",
-    "ibm_db": "^2.8.1",
     "js-combinatorics": "^0.6.1",
     "lcov-result-merger": "^3.1.0",
     "lint-staged": "^12.1.4",
@@ -109,7 +108,6 @@
     "mysql2": "^2.3.3",
     "node-hook": "^1.0.0",
     "nyc": "^15.1.0",
-    "oracledb": "^5.5.0",
     "p-map": "^4.0.0",
     "p-props": "^4.0.0",
     "p-settle": "^4.1.1",
@@ -137,9 +135,6 @@
     "mysql2": {
       "optional": true
     },
-    "ibm_db": {
-      "optional": true
-    },
     "snowflake-sdk": {
       "optional": true
     },
@@ -150,9 +145,6 @@
       "optional": true
     },
     "tedious": {
-      "optional": true
-    },
-    "oracledb": {
       "optional": true
     }
   },
@@ -165,9 +157,7 @@
     "pg",
     "mssql",
     "db2",
-    "ibm_db",
     "sql",
-    "oracledb",
     "sqlserver",
     "snowflake",
     "orm",
